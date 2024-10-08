@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+  <!--
+    Name: Jaskarn Singh
+    File: homework-1-ty.html
+    Date Created: 2024-09-09
+    Date Updated: 2024-09-21
+    Purpose: MIS 7375 Homework 1 - Patient Registration Form
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Thank you!</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="thankyou">      
+        <p>Thank you for submitting your form and our dedicated staff will review 
+            and reach out back to you as soon as possible! We have our clinic hours listed
+            below for you to review and you may also close out the browser now.</p>
+
+        <p>Clinic Hours: Monday-Friday, 8:00 AM to 6:00 PM USA Central Time</p>
+        <p>Your local time: <span id="today"></span>, <span id="localtime"></span></p>
+
+        <script>
+           document.getElementById("today").innerHTML = new Date().toDateString();
+           document.getElementById("localtime").innerHTML = new Date().toLocaleTimeString();
+        </script>
+    <!--
+        The thank you page provides the user confirmation of submission and provides the
+        local time and clinic hours.
+    -->
+    </body>
+</html>
