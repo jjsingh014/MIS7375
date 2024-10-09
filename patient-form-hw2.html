@@ -34,16 +34,14 @@
             Patient Registration Form
         </h1>
         <p>
-            Please fill in the the patient registration 
-            form below and press submit when completed.
-            Please check your work after.
+            Please fill in the the patient registration form below and press submit when completed.
         </p>
         <!--
             I created the page heading and a paragraph with short instructions on what
             to do on this page. Then I created a form below and which a table is nested
             inside the form. 
         -->
-        <form action="homework-1-ty.html">
+        <form name="patientdata" action="homework-1-ty.html">
             <table id="maintable"> 
                 <!-- I created a id calles maintable to manage styling of the table. 
                     I also request the users basic informating and make that a requirement 
@@ -425,7 +423,7 @@
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type="button" onclick="alert('Hello World!')" value="Check your Data">
+                        <input type="button" onclick="checkData()" value="Check your Data">
                     </td>
                     <td align="center">
                         <input type="submit" value="Submit Form">
@@ -436,6 +434,8 @@
                 </tr>
             </table>
         </form>
+        <!-- Load external JavaScript -->
+        <script src="hw2-scripts.js"></script>
         <!-- I added this javascript to provide the local date. I copy and pasted from 
             the example site.
         -->
