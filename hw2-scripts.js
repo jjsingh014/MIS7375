@@ -16,6 +16,6 @@ function getData{
     form_data_output="<table class='useroutput'><th>Name</th><<th>Value</th>";
 
     for (i = 0; i < form_data.length; i++) {
-                data=form_data.
+                data=form_data
             }
 }
