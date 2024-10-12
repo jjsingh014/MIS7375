@@ -3,7 +3,7 @@
     Name: Jaskarn Singh
     File: patient-form.html
     Date Created: 2024-09-09
-    Date Updated: 2024-10-08
+    Date Updated: 2024-10-12
     Purpose: MIS 7375 Homework 2 - Patient Registration Form
 -->
 
@@ -60,6 +60,7 @@
                             name="fname"
                             maxlength="30"
                             placeholder="John"
+                            pattern="[A-Z^a-z-' ^~]{2,}"
                             required
                         >
                 </tr>
@@ -75,6 +76,7 @@
                             size="2"
                             maxlength="1"
                             placeholder="T"
+                            pattern="[A-Z^a-z ]{0,}"
                         >
                     </td>
                 </tr>
@@ -89,6 +91,7 @@
                             name="lname"
                             maxlength="30"
                             placeholder="Doe"
+                            pattern="[A-Z^a-z-' ^~]{2,}"
                             required 
                         >
                     </td>
@@ -211,6 +214,7 @@
                             size="7"
                             maxlength="5"
                             placeholder="12345"
+                            pattern="[0-9]{5}"
                             required  
                         >
                     </td>
@@ -269,6 +273,9 @@
                             name="email"
                             maxlength="40"
                             placeholder="john.t.doe@hmc.net"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,20}$"
+                            oninvalid="this.setCustomValidity('Email Invalid')"
+                            oninput="this.setCustomValidity('')"
                             required    
                         >
                     </td>
@@ -284,6 +291,7 @@
                             name="userid"
                             maxlength="15"
                             placeholder="Req'd"
+                            pattern=[A-Za-z]+[A-Za-z0-9-_]{8,}
                             required
                         >
                     </td>
@@ -298,6 +306,22 @@
                             id="pwd" 
                             name="pwd"
                             maxlength="15"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            required   
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password: </label>
+                    </td>
+                    <td align="left">
+                        <input 
+                            type="password" 
+                            id="pwd" 
+                            name="pwd"
+                            maxlength="15"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             required   
                         >
                     </td>
