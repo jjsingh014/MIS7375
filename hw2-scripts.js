@@ -29,6 +29,53 @@ function getData{
 }
 */
 
+// Deal with password    
+function passwordentry() {
+    var passwordoutput;
+    var passwordinput = document.getElementById("password").value;
+    console.log(passwordinput);
+    // Validate lowercase letters
+    if(passwordinput.search(/[a-z]/) < 0 ) {
+      passwordoutput = "Enter At least 1 lower case letter";
+      error_flag = 1;
+    } else {
+      passwordoutput = "";
+    }
+    document.getElementById("password_message1").innerHTML = passwordoutput;
+    // Validate capital letters
+    if(passwordinput.search(/[A-Z]/)< 0)  {  
+      passwordoutput = "Enter at least 1 upper case letter";
+      error_flag = 1;
+    } else {
+      passwordoutput = "";
+    }
+    document.getElementById("password_message2").innerHTML = passwordoutput;
+  // Validate numbers
+   if(passwordinput.search(/[0-9]/)<0 ) {   
+    passwordoutput = "EnteraAt least 1 number";
+    error_flag = 1;
+    } else {
+    passwordoutput = "Got at least 1 number";
+    }
+    document.getElementById("password_message3").innerHTML = passwordoutput;
+    // Validate special chars
+   if(passwordinput.search(/[!\@#\$%&*\-_\\.+\(\)]/)<0 ) {   
+    passwordoutput = "Enter At least 1 special character";
+    error_flag = 1;
+    } else {
+    passwordoutput = "Got at least 1 special character";
+    }
+    document.getElementById("password_message4").innerHTML = passwordoutput;
+  // Validate length
+  if(passwordinput.length < 8) {
+      passwordoutput = "Enter a Minimum 8 characters";
+      error_flag = 1;
+  } else {
+      passwordoutput = "Password is now 8 or more characters";
+  }
+  document.getElementById("password_message5").innerHTML = passwordoutput;
+  }
+
 // Password check between the two password fields
 function pwdcheck() {
     x=document.getElementById("password").value;
