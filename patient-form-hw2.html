@@ -331,9 +331,9 @@
                             maxlength="15"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Password must have at least one number, one uppercase, one lowercase letter, and at must have least 8 characters and no more than 15 characters"
-                            onfocus="passwordentry()"
-                            oninput="passwordentry()"
-                            onblur="passwordentry()"
+                            onfocus="pwdvalidation()"
+                            oninput="pwdvalidation()"
+                            onblur="pwdvalidation()"
                             required   
                         >
                         <span id="password_text">
