@@ -79,8 +79,8 @@ function passwordentry() {
 // Password check between the two password fields
 function pwdcheck() {
     x=document.getElementById("pwd").value;
-    y=document.getElementById("pwd2”).value;
-    if ( x==y ) 
+    y=document.getElementById("pwd2").value;
+    if ( x==y )
     {
       document.getElementById("pwd2_text").innerHTML = "Passwords match";
     } else  
