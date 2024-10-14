@@ -8,6 +8,13 @@
  and bring it in here in the script, OR use document.writes to inject html code for proper formatting.
 */
 
+// Console log error check
+function errorcheck()
+  {
+    var error_flag = 0;
+    console.log(error_flag);
+  }
+
 function getData{
     var form_data = document.getElementById(patientdata);
     var form_data_output;
@@ -19,3 +26,18 @@ function getData{
                 data=form_data.elements[i].type;
             }
 }
+
+// Password check between the two password fields
+function pwdcheck() {
+    x=document.getElementById("password").value;
+    y=document.getElementById("pwd2”).value;
+    if ( x==y ) 
+    {
+      document.getElementById("pwd2_text").innerHTML = "Passwords match";
+    } else  
+      {
+         document.getElementById("pwd2_text").innerHTML = "Passwords DO NOT match";
+         error_flag = 1;
+      }
+    }
+
