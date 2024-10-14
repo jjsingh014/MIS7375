@@ -30,45 +30,45 @@ function getData{
 */
 
 // Checks the user password to see it meets password requirement  
-function passwordentry() {
+function pwdvalidation() {
     var passwordoutput;
     var passwordinput = document.getElementById("pwd").value;
     console.log(passwordinput);
-    // Validate lowercase letters
+    // This validates that user enters at least 1 lowercase letter
     if(passwordinput.search(/[a-z]/) < 0 ) {
-      passwordoutput = "Enter At least 1 lower case letter";
+      passwordoutput = "Enter at least 1 lowercase letter";
       error_flag = 1;
     } else {
       passwordoutput = "";
     }
     document.getElementById("first_message").innerHTML = passwordoutput;
-    // Validate capital letters
+    // This validates that the user enters at least 1 capital letter
     if(passwordinput.search(/[A-Z]/)< 0)  {  
-      passwordoutput = "Enter at least 1 upper case letter";
+      passwordoutput = "Enter at least 1 uppercase letter";
       error_flag = 1;
     } else {
       passwordoutput = "";
     }
     document.getElementById("second_message").innerHTML = passwordoutput;
-  // Validate numbers
+  // This validates that the user enters at least 1 numbers
    if(passwordinput.search(/[0-9]/)<0 ) {   
-    passwordoutput = "EnteraAt least 1 number";
+    passwordoutput = "Enter at least 1 number";
     error_flag = 1;
     } else {
     passwordoutput = "Got at least 1 number";
     }
     document.getElementById("third_message").innerHTML = passwordoutput;
-    // Validate special chars
+    // This validates that the user enters at least 1 special charater
    if(passwordinput.search(/[!\@#\$%&*\-_\\.+\(\)]/)<0 ) {   
-    passwordoutput = "Enter At least 1 special character";
+    passwordoutput = "Enter at least 1 special character";
     error_flag = 1;
     } else {
     passwordoutput = "Got at least 1 special character";
     }
     document.getElementById("_fourth_message").innerHTML = passwordoutput;
-  // Validate length
+  // This validates that the user has minimum length of 8 characters in the password
   if(passwordinput.length < 8) {
-      passwordoutput = "Enter a Minimum 8 characters";
+      passwordoutput = "Enter a minimum of 8 characters";
       error_flag = 1;
   } else {
       passwordoutput = "Password is now 8 or more characters";
