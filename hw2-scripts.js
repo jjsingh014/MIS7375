@@ -65,7 +65,7 @@ function pwdvalidation() {
     } else {
     passwordoutput = "Got at least 1 special character";
     }
-    document.getElementById("_fourth_message").innerHTML = passwordoutput;
+    document.getElementById("fourth_message").innerHTML = passwordoutput;
   // This validates that the user has minimum length of 8 characters in the password
   if(passwordinput.length < 8) {
       passwordoutput = "Enter a minimum of 8 characters";
