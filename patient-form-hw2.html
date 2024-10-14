@@ -331,24 +331,30 @@
                             maxlength="15"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Password must have at least one number, one uppercase, one lowercase letter, and at must have least 8 characters and no more than 15 characters"
+                            onfocus="passwordentry()"
+                            oninput="passwordentry()"
+                            onblur="passwordentry()"
                             required   
                         >
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="password">Re-enter Password: </label>
+                        <label for="pwd2">Re-enter Password: </label>
                     </td>
                     <td align="left">
                         <input 
                             type="password" 
-                            id="pwd" 
-                            name="pwd"
+                            id="pwd2" 
+                            name="pwd2"
                             maxlength="15"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Password must have at least one number, one uppercase, one lowercase letter, and at must have least 8 characters and no more than 15 characters"
-                            required   
+                            onfocus="pwdcheck()"
+                            oninput="pwdcheck()"
+                            onblur="pwdcheck()"
                         >
+                        <span id="pwd2_text"></span>
                     </td>
                 </tr>
                 <!--
