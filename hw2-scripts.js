@@ -32,7 +32,7 @@ function getData{
 // Deal with password    
 function passwordentry() {
     var passwordoutput;
-    var passwordinput = document.getElementById("password").value;
+    var passwordinput = document.getElementById("pwd").value;
     console.log(passwordinput);
     // Validate lowercase letters
     if(passwordinput.search(/[a-z]/) < 0 ) {
@@ -78,7 +78,7 @@ function passwordentry() {
 
 // Password check between the two password fields
 function pwdcheck() {
-    x=document.getElementById("password").value;
+    x=document.getElementById("pwd").value;
     y=document.getElementById("pwd2”).value;
     if ( x==y ) 
     {
