@@ -15,7 +15,8 @@ function errorcheck()
     console.log(error_flag);
   }
 
-/*function getData{
+/*
+function getData{
     var form_data = document.getElementById(patientdata);
     var form_data_output;
     var i;
@@ -25,7 +26,8 @@ function errorcheck()
     for (i = 0; i < form_data.length; i++) {
                 data=form_data.elements[i].type;
             }
-}*/
+}
+*/
 
 // Password check between the two password fields
 function pwdcheck() {
