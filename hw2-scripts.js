@@ -29,7 +29,7 @@ function getData{
 }
 */
 
-// Deal with password    
+// Checks the user password to see it meets password requirement  
 function passwordentry() {
     var passwordoutput;
     var passwordinput = document.getElementById("pwd").value;
@@ -41,7 +41,7 @@ function passwordentry() {
     } else {
       passwordoutput = "";
     }
-    document.getElementById("first_pwd_message").innerHTML = passwordoutput;
+    document.getElementById("first_message").innerHTML = passwordoutput;
     // Validate capital letters
     if(passwordinput.search(/[A-Z]/)< 0)  {  
       passwordoutput = "Enter at least 1 upper case letter";
@@ -49,7 +49,7 @@ function passwordentry() {
     } else {
       passwordoutput = "";
     }
-    document.getElementById("second_pwd_message").innerHTML = passwordoutput;
+    document.getElementById("second_message").innerHTML = passwordoutput;
   // Validate numbers
    if(passwordinput.search(/[0-9]/)<0 ) {   
     passwordoutput = "EnteraAt least 1 number";
@@ -57,7 +57,7 @@ function passwordentry() {
     } else {
     passwordoutput = "Got at least 1 number";
     }
-    document.getElementById("third_pwd_message").innerHTML = passwordoutput;
+    document.getElementById("third_message").innerHTML = passwordoutput;
     // Validate special chars
    if(passwordinput.search(/[!\@#\$%&*\-_\\.+\(\)]/)<0 ) {   
     passwordoutput = "Enter At least 1 special character";
@@ -65,7 +65,7 @@ function passwordentry() {
     } else {
     passwordoutput = "Got at least 1 special character";
     }
-    document.getElementById("_fourth_pwd_message").innerHTML = passwordoutput;
+    document.getElementById("_fourth_message").innerHTML = passwordoutput;
   // Validate length
   if(passwordinput.length < 8) {
       passwordoutput = "Enter a Minimum 8 characters";
@@ -73,7 +73,7 @@ function passwordentry() {
   } else {
       passwordoutput = "Password is now 8 or more characters";
   }
-  document.getElementById("fifth_pwd_message").innerHTML = passwordoutput;
+  document.getElementById("fifth_message").innerHTML = passwordoutput;
   }
 
 // Password check between the two password fields
