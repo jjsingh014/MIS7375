@@ -250,6 +250,7 @@
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
                             oninvalid="this.setCustomValidity('Please enter a phone as this is required')"
                             oninput="this.setCustomValidity('')"
+                            title="Please enter phone number with dashes between phone number segments"
                             required
                         >
                     </td>
@@ -288,7 +289,7 @@
                     </td>
                     <td align="left">
                         <input 
-                            type="text" 
+                            type="email" 
                             id="email" 
                             name="email"
                             maxlength="40"
@@ -296,6 +297,7 @@
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,40}"
                             oninvalid="this.setCustomValidity('Email is not valid. Please re-enter')"
                             oninput="this.setCustomValidity('')"
+                            title="Please enter your email"
                             required    
                         >
                     </td>
