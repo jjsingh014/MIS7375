@@ -114,6 +114,8 @@
                             type="date"
                             id="dob"
                             name="dob"
+                            oninvalid="this.setCustomValidity('The Date of Birth is invalid')"
+                            oninput="this.setCustomValidity('')"
                         >
                     </td>
                 </tr>
