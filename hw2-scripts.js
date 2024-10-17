@@ -35,7 +35,7 @@ function getData(){
              break;
              default:
                form_data_output = form_data_output + "<tr><td align='left'>"+form_data.element[i].name+"</td>";
-               form_data_output = form_data_output + "<tr><td align='left'>"+ data + "</td>;
+               form_data_output = form_data_output + "<tr><td align='left'>"+ data + "</td>";
                form_data_output = form_data_output + "<td class='outputdata'>"+ form_data.element[i].value+"</td></tr>";
          }
     }
