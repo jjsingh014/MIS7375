@@ -17,7 +17,7 @@ function errorcheck()
 
 
 function getData(){
-    var form_data = document.getElementById(patientdata);
+    var form_data = document.getElementById("patientdata");
     var form_data_output;
     var data;
     var i;
