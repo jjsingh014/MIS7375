@@ -90,3 +90,23 @@ function pwdcheck() {
       }
     }
 
+//Checking DoB
+function checkData(){
+   var doc = document;
+   var birth = doc.getElementById("dob");
+   var checkValue = doc.getElementById("checkValue");
+   
+   checkValue.addEventListener("click", function(){
+   var birthDate = new Date(birth.value);
+   var todayDate = new Date();
+   var dateDiff = new Date(todayDate - birthDate);
+   var YEAR_OFFSET = 1970;
+   var z = dateDiff.getFullYear()-YEAR_OFFSET;
+   if(z < 120){
+       	doc.getElementById("display").innerHTML = ("DoB is good!");
+       }else {
+       	doc.getElementById("display").innerHTML = ("DoB is Invalid");
+        error_flag = 1
+       }
+   });
+}
