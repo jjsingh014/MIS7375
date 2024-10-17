@@ -29,8 +29,9 @@ function getData(){
           case "label":
                 if (form_data.elements[i].checked){
                     form_data_output = form_data_output + "<tr><td align='right'>"+form_data.elements[i].name+"</td>";
-                    //form_data_output = form_data_output +"<td align='right'>"+ data + "</td>";
+                    form_data_output = form_data_output +"<td align='right'>"+ data + "</td>";
                     form_data_output = form_data_output +"<td class='outputdata'>"+ form_data.elements[i].value+"</td></tr>";
+                }
            break;
           default:
                form_data_output = form_data_output + "<tr><td align='left'>"+form_data.elements[i].name+"</td>";
