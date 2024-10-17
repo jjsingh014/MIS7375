@@ -24,12 +24,12 @@ function getData(){
     form_data_output="<table class='useroutput'><th>Name</th><<th>Value</th>";
     for (i = 0; i < form_data.length; i++) {
          console.log("item: "+i+" "+form_data.elements[i].name+" = "+form_data.elements[i].value);
-         data = form_data.elements[i].label;
+         data = form_data.elements[i].for;
          switch (data){
           case "label":
                 if (form_data.elements[i].checked){
                     form_data_output = form_data_output + "<tr><td align='right'>"+form_data.elements[i].name+"</td>";
-                    form_data_output = form_data_output +"<td align='right'>"+ data + "</td>";
+                    //form_data_output = form_data_output +"<td align='right'>"+ data + "</td>";
                     form_data_output = form_data_output +"<td class='outputdata'>"+ form_data.elements[i].value+"</td></tr>";
            break;
           default:
