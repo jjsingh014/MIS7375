@@ -27,7 +27,7 @@ function getData(){
          data = form_data.elements[i].label;
          switch (data){
              default:
-               form_data_output = form_data_output + "<tr><td align='left'>"+form_data.elements[i].name+"</td>";
+               form_data_output = form_data_output + "<tr><td align='left'>"+form_data.elements[i].for+"</td>";
                form_data_output = form_data_output + "<tr><td align='left'>"+ data + "</td>";
                form_data_output = form_data_output + "<td class='outputdata'>"+ form_data.elements[i].value+"</td></tr>";
          }
