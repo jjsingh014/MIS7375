@@ -537,6 +537,9 @@
                 </tr>
                 <tr>
                     <td align="center">
+                        <input type="button" id="getdata1" onclick="getData()" value="Get Data">
+                    </td>
+                    <td align="center">
                         <input type="button" id="checkValue" onclick="checkData()" value="Check your Data">
                     </td>
                     <td align="center">
@@ -548,6 +551,8 @@
                 </tr>
             </table>
         </form>
+        <!-- Show entered form data -->
+        <p id="outputformdata"></p>
         <!-- Load external JavaScript -->
         <script src="hw2-scripts.js"></script>
         <!-- I added this javascript to provide the local date. I copy and pasted from 
