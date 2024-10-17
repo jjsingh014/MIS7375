@@ -15,19 +15,37 @@ function errorcheck()
     console.log(error_flag);
   }
 
-/*
+
 function getData{
     var form_data = document.getElementById(patientdata);
     var form_data_output;
+    var data;
     var i;
-
     form_data_output="<table class='useroutput'><th>Name</th><<th>Value</th>";
-
     for (i = 0; i < form_data.length; i++) {
-                data=form_data.elements[i].type;
-            }
+         console.log("item: "+i+" "+form_data.element[i].name+" = "+form_data.element[i].value);
+         data = form_data.elements[i].for;
+         switch (data){
+           case "radio":
+             if(form_data.elements[i].checked){
+               form_data_output = form_data_output + "<tr><td align='left'>"+form_data.element[i].name+"</td>";
+               form_data_output = form_data_output + "<tr><td align='left'>"+ data + "</td>";
+               form_data_output = form_data_output + "<td class='outputdata'>"+ form_data.element[i].value+"</td></tr>"
+             }
+             break;
+             default:
+               form_data_output = form_data_output + "<tr><td align='left'>"+form_data.element[i].name+"</td>";
+               form_data_output = form_data_output + "<tr><td align='left'>"+ data + "</td>;
+               form_data_output = form_data_output + "<td class='outputdata'>"+ form_data.element[i].value+"</td></tr>";
+         }
+    }
+  if(form_data_output.length>0){
+     form_data_output = form_data_output + "</table>";
+     document.getElementById("outputformdata").innerHTML = form_data_output;
+
+  }
 }
-*/
+
 
 // Checks the user password to see it meets password requirement  
 function pwdvalidation() {
