@@ -122,9 +122,11 @@
                         >
                         <span id="display">
                     </td>
+                    <!--
                     <td align="center">
                         <input type="button" id="checkValue" onclick="checkDoB()" value="Check DoB">
                     </td>
+                    -->
                 </tr>
                 <tr>
                     <td>
@@ -560,10 +562,10 @@
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type="button" id="getdata1" onclick="getData()" value="Get Data">
+                        <input type="button" id="getdata1" onclick="getData(); checkDoB()" value="Get Data">
                     </td>
                     <td align="center">
-                        <input type="submit" value="Submit Form">
+                        <input type="submit" onclick="checkDoB()" value="Submit Form">
                     </td>
                     <td align="center">
                         <input type="reset" value="Reset Form">
