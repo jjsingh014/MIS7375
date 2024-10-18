@@ -38,7 +38,7 @@ function getData(){
                     form_data_output = form_data_output +"<td class='outputdata'>"+ form_data.elements[i].value+"</td></tr>";
                 }
            break;
-           case "button":
+           case "button": case "reset": case "submit":
            break;
           default:
                form_data_output = form_data_output + "<tr><td align='left'>"+form_data.elements[i].name+"</td>";
