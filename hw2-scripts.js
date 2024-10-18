@@ -112,7 +112,7 @@ function pwdcheck() {
       }
     }
 
-//Checking DoB
+//Checking DoB is valid
 function checkDoB(){
    var doc = document;
    var birth = doc.getElementById("dob");
