@@ -22,7 +22,7 @@ function getData(){
     var form_data_output;
     var data;
     var i;
-    form_data_output="<table class='useroutput'><th>Name</th><<th>Value</th>";
+    form_data_output="<table class='useroutput'><th>Name</th><th>Value</th>";
     for (i = 0; i < form_data.length; i++) {
          console.log("item: "+i+" "+form_data.elements[i].name+" = "+form_data.elements[i].value);
          data = form_data.elements[i].type;
