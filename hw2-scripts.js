@@ -118,7 +118,7 @@ function pwdcheck() {
 function checkDoB(){
    var doc = document;
    var birth = doc.getElementById("dob");
-   var checkValue = doc.getElementById("checkValue");
+   var checkValue = doc.getElementById("getData1");
    
    checkValue.addEventListener("click", function(){
    var birthDate = new Date(birth.value);
