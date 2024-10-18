@@ -126,7 +126,7 @@ function checkDoB(){
    var dateDiff = new Date(todayDate - birthDate);
    var YEAR_OFFSET = 1970;
    var z = dateDiff.getFullYear()-YEAR_OFFSET;
-   if(0 >= z < 120){
+   if(z < 120 && z >= 0){
        	doc.getElementById("display").innerHTML = ("DoB is good!");
        }else {
        	doc.getElementById("display").innerHTML = ("DoB is Invalid");
