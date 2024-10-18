@@ -15,7 +15,7 @@ function errorcheck()
     console.log(error_flag);
   }
 
-
+//This function looks throught the form and displays the data below the form for the user to check
 function getData(){
     var form_data = document.getElementById("patientdata");
     var form_data_output;
@@ -113,7 +113,7 @@ function pwdcheck() {
     }
 
 //Checking DoB
-function checkData(){
+function checkDoB(){
    var doc = document;
    var birth = doc.getElementById("dob");
    var checkValue = doc.getElementById("checkValue");
