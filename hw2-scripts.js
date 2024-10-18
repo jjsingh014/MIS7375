@@ -26,7 +26,7 @@ function getData(){
          console.log("item: "+i+" "+form_data.elements[i].name+" = "+form_data.elements[i].value);
          data = form_data.elements[i].for;
          switch (data){
-          case "label":
+          case "radio":
                 if (form_data.elements[i].checked){
                     form_data_output = form_data_output + "<tr><td align='right'>"+form_data.elements[i].name+"</td>";
                     form_data_output = form_data_output +"<td align='right'>"+ data + "</td>";
