@@ -114,13 +114,16 @@
                             type="date"
                             id="dob"
                             name="dob"
-                            oninvalid="checkData()"
-                            onblur="checkData()"
-                            oninput="checkData()"
+                            oninvalid="checkDoB()"
+                            onblur="checkDoB()"
+                            oninput="checkDoB()"
                             required
                             title="Please enter your data of birth"
                         >
                         <span id="display">
+                    </td>
+                    <td align="center">
+                        <input type="button" id="checkValue" onclick="checkDoB()" value="Check DoB">
                     </td>
                 </tr>
                 <tr>
@@ -558,9 +561,6 @@
                 <tr>
                     <td align="center">
                         <input type="button" id="getdata1" onclick="getData()" value="Get Data">
-                    </td>
-                    <td align="center">
-                        <input type="button" id="checkValue" onclick="checkData()" value="Check your Data">
                     </td>
                     <td align="center">
                         <input type="submit" value="Submit Form">
