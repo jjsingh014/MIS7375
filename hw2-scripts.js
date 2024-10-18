@@ -18,7 +18,7 @@ function errorcheck()
 //This function looks throught the form and displays the data below the form for the user to check
 function getData(){
     var form_data = document.getElementById("patientdata");
-    var form_data2 = document.getElementByTagName("label");
+    //var form_data2 = document.getElementByTagName("label");
     var form_data_output;
     var data;
     var i;
@@ -42,7 +42,7 @@ function getData(){
            case "button": case "reset": case "submit":
            break;
           default:
-               form_data_output = form_data_output + "<tr><td align='left'>"+form_data2.elements[i].for+"</td>";
+               form_data_output = form_data_output + "<tr><td align='left'>"+form_data.elements[i].name+"</td>";
                form_data_output = form_data_output + "<td class='outputdata'>"+ form_data.elements[i].value+"</td></tr>";
          }
     }
