@@ -107,7 +107,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="dob" onclick="checkDoB()">Date of Birth: </label>
+                        <label for="dob">Date of Birth: </label>
                     </td>
                     <td align="left">
                         <input
@@ -115,6 +115,7 @@
                             id="dob"
                             name="dob"
                             oninvalid="checkDoB()"
+                            onclick="checkDoB()"
                             onblur="checkDoB()"
                             oninput="checkDoB()"
                             required
