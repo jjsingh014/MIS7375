@@ -181,8 +181,10 @@ function ssnvalidation(){
    }
 
 function phonevalidation(){
-   x = document.getElementById("phone").value;
-   if(x.length<12) { 
+   var phoneoutput;
+   var phoneinput = document.getElementById("phone").value;
+   console.log(phoneinput);
+   if(phoneinput.length<12) { 
        document.getElementById("phone_message").innerHTML = "The phone number is too short.";  
        error_flag = 1;
    }else {
@@ -194,10 +196,10 @@ function phonevalidation(){
         }
     }
  
-   if (x.search(/[-]+$/)< 0){
-              document.getElementById("phone_message2").innerHTML = "The phone number has no dashes.";
+   if (phoneinput.search(/[-]+$/)< 0){
+              phoneoutput = "The phone number has no dashes.";
               error_flag = 1;
          }else {
-            document.getElementById("phone_message2").innerHTML = "";
+            document.getElementById("phone_message2").innerHTML = phoneoutput;
           }
    }
