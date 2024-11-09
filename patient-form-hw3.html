@@ -372,9 +372,11 @@
                             title="Please enter at least 8 characters and no spaces or special characters."
                             oninvalid="this.setCustomValidity('User ID is not valid. Please enter letters, numbers, dash or underscore. No other special characters.')"
                             oninput="this.setCustomValidity('')"
+                            onblur="useridvalidation()"
                             required
                         >
                     </td>
+                    <td><span id="userid_message"></span></td>
                 </tr>
                 <tr>
                     <td>
