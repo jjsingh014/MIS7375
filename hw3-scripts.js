@@ -227,7 +227,7 @@ function useridvalidation(){
        document.getElementById("userid_message").innerHTML = "The email is too short.";  
        error_flag = 1;
    }else {
-       if (x.match(/[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]+$/)) {
+       if (x.match(/[A-Za-z]+[A-Za-z0-9-_]+$/)) {
            document.getElementById("userid_message").innerHTML = "";  
        }else  {
           document.getElementById("userid_message").innerHTML = "The email has invalid character.";
