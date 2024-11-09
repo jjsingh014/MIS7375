@@ -224,13 +224,13 @@ function emailvalidation(){
 function useridvalidation(){
    x = document.getElementById("userid").value;
    if(x.length<8) { 
-       document.getElementById("userid_message").innerHTML = "The email is too short.";  
+       document.getElementById("userid_message").innerHTML = "The user id is too short.";  
        error_flag = 1;
    }else {
        if (x.match(/[A-Za-z]+[A-Za-z0-9-_]+$/)) {
            document.getElementById("userid_message").innerHTML = "";  
        }else  {
-          document.getElementById("userid_message").innerHTML = "The email has invalid character.";
+          document.getElementById("userid_message").innerHTML = "The user id has invalid character.";
           error_flag = 1;
         }
     }
