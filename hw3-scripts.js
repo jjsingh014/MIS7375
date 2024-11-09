@@ -197,9 +197,10 @@ function phonevalidation(){
     }
  
    if (phoneinput.search(/[-]/)< 0){
-              phoneoutput = "The phone number has no dashes.";
-              error_flag = 1;
-         }else {
-            document.getElementById("phone_message2").innerHTML = phoneoutput;
-          }
+       phoneoutput = "The phone number has no dashes.";
+       error_flag = 1;
+   }else {
+       phoneoutput = "The phone number has dashes.";
    }
+   document.getElementById("phone_message2").innerHTML = phoneoutput;
+}
