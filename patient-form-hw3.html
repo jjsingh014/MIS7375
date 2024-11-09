@@ -351,9 +351,11 @@
                             oninvalid="this.setCustomValidity('Email is not valid. Please re-enter')"
                             oninput="this.setCustomValidity('')"
                             title="Please enter your email"
+                            onblur="emailvalidation()"
                             required    
                         >
                     </td>
+                    <td><span id="email_message"></span></td>
                 </tr>
                 <tr>
                     <td>
