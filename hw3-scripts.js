@@ -138,13 +138,28 @@ function checkDoB(){
 function fnamevalidation(){
    x = document.getElementById("fname").value;
    if(x.length<2) { 
-       document.getElementById("fname_message").innerHTML = "Invalid name... too short.";  
+       document.getElementById("fname_message").innerHTML = "The name is too short.";  
        error_flag = 1;
    }else {
        if (x.match(/[a-zA-Z3-5'-]+$/)) {
            document.getElementById("fname_message").innerHTML = "";  
        }else  {
-          document.getElementById("fname_message").innerHTML = "Invalid characters in name.";
+          document.getElementById("fname_message").innerHTML = "The name has invalid character.";
+          error_flag = 1;
+        }
+    }
+   }
+
+function lnamevalidation(){
+   x = document.getElementById("fname").value;
+   if(x.length<2) { 
+       document.getElementById("fname_message").innerHTML = "The name is too short.";  
+       error_flag = 1;
+   }else {
+       if (x.match(/[a-zA-Z3-5'-]+$/)) {
+           document.getElementById("fname_message").innerHTML = "";  
+       }else  {
+          document.getElementById("fname_message").innerHTML = "The name has invalid character.";
           error_flag = 1;
         }
     }
