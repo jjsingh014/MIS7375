@@ -192,7 +192,7 @@ function phonevalidation(){
           document.getElementById("phone_message").innerHTML = "The phone has invalid character.";
           error_flag = 1;
         }else {
-            if (x.search(/[-]+$/)< 0){
+            if (x.match(/[-]+$/)< 0){
                  document.getElementById("phone_message").innerHTML = "The phone number has no dashes.";
                  error_flag = 1;
             }
