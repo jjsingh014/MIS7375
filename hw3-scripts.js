@@ -196,7 +196,7 @@ function phonevalidation(){
         }
     }
  
-   if (phoneinput.search(/[-]+$/)< 0){
+   if (phoneinput.search(/[-]/)< 0){
               phoneoutput = "The phone number has no dashes.";
               error_flag = 1;
          }else {
