@@ -186,11 +186,15 @@ function phonevalidation(){
        document.getElementById("phone_message").innerHTML = "The phone number is too short.";  
        error_flag = 1;
    }else {
-       if (x.match(/[0-9]+$/)) {
+       if (x.match(/[0-9-]+$/)) {
            document.getElementById("phone_message").innerHTML = "";  
        }else  {
           document.getElementById("phone_message").innerHTML = "The phone has invalid character.";
           error_flag = 1;
+        }else {
+            if (passwordinput.search(/[-]+$/)< 0){
+                 document.getElementById("phone_message").innerHTML = "The phone number has no dashes.";
+            }
         }
     }
    }
