@@ -151,15 +151,15 @@ function fnamevalidation(){
    }
 
 function lnamevalidation(){
-   x = document.getElementById("fname").value;
+   x = document.getElementById("lname").value;
    if(x.length<2) { 
-       document.getElementById("fname_message").innerHTML = "The name is too short.";  
+       document.getElementById("lname_message").innerHTML = "The name is too short.";  
        error_flag = 1;
    }else {
        if (x.match(/[a-zA-Z3-5'-]+$/)) {
-           document.getElementById("fname_message").innerHTML = "";  
+           document.getElementById("lname_message").innerHTML = "";  
        }else  {
-          document.getElementById("fname_message").innerHTML = "The name has invalid character.";
+          document.getElementById("lname_message").innerHTML = "The name has invalid character.";
           error_flag = 1;
         }
     }
