@@ -103,9 +103,11 @@
                             title="Please enter at least 2 characters and only letters,  spaces, dashes and apostrophe are acceptable"
                             oninvalid="this.setCustomValidity('Not vaild last name')"
                             oninput="this.setCustomValidity('')"
+                            onblur="lnamevalidation()"
                             required 
                         >
                     </td>
+                    <td><span id="lname_message"></span></td>
                 </tr>
                 <tr>
                     <td>
