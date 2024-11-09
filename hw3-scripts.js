@@ -200,7 +200,12 @@ function phonevalidation(){
        phoneoutput = "The phone number has no dashes.";
        error_flag = 1;
    }else {
-       phoneoutput = "The phone number has dashes.";
+        if (phoneinput.search(/[-]/=2) {
+           phoneoutput = "You need 2 dashes";
+           error_flag = 1;
+       }else  {
+          phoneoutput = "It has 2 dashes.";
+        }
    }
    document.getElementById("phone_message2").innerHTML = phoneoutput;
 }
