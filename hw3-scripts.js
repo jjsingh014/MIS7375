@@ -189,7 +189,7 @@ function phonevalidation(){
        if (x.match(/[0-9-]+$/)) {
            document.getElementById("phone_message").innerHTML = "";  
        }else {
-         if (x.match(/[-]+$/)< 0){
+         if (x.search(/[-]+$/)< 0){
               document.getElementById("phone_message").innerHTML = "The phone number has no dashes.";
               error_flag = 1;
             }
