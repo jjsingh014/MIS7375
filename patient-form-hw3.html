@@ -301,9 +301,11 @@
                             oninvalid="this.setCustomValidity('Please enter a phone as this is required')"
                             oninput="this.setCustomValidity('')"
                             title="Please enter phone number with dashes between phone number segments"
+                            onblur="phonevalidation()"
                             required
                         >
                     </td>
+                    <td><span id="phone_message"></span></td>
                 </tr>
                 </tr>
                     <td>
