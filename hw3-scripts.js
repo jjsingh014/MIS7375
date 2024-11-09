@@ -204,3 +204,19 @@ function phonevalidation(){
    }
    document.getElementById("phone_message2").innerHTML = phoneoutput;
 }
+
+
+function emailvalidation(){
+   x = document.getElementById("email").value;
+   if(x.length<8) { 
+       document.getElementById("email_message").innerHTML = "The email is too short.";  
+       error_flag = 1;
+   }else {
+       if (x.match(/[a-zA-Z3-5@-.]+$/)) {
+           document.getElementById("email_message").innerHTML = "";  
+       }else  {
+          document.getElementById("email_message").innerHTML = "The email has invalid character.";
+          error_flag = 1;
+        }
+    }
+   }
