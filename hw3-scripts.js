@@ -167,11 +167,11 @@ function lnamevalidation(){
 
 function ssnvalidation(){
    x = document.getElementById("ssn").value;
-   if(x.length<2) { 
+   if(x.length<11) { 
        document.getElementById("ssn_message").innerHTML = "The SSN is too short.";  
        error_flag = 1;
    }else {
-       if (x.match(/[0-9]{3}-[0-9]{2}-[0-9]{4}+$/)) {
+       if (x.match(/[0-9]+$/)) {
            document.getElementById("ssn_message").innerHTML = "";  
        }else  {
           document.getElementById("ssn_message").innerHTML = "The name has invalid character.";
