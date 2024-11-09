@@ -194,6 +194,7 @@ function phonevalidation(){
         }else {
             if (x.search(/[-]+$/)< 0){
                  document.getElementById("phone_message").innerHTML = "The phone number has no dashes.";
+                 error_flay = 1;
             }
         }
     }
