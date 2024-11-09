@@ -212,7 +212,7 @@ function emailvalidation(){
        document.getElementById("email_message").innerHTML = "The email is too short.";  
        error_flag = 1;
    }else {
-       if (x.match(/[a-zA-Z3-5@-.]+$/)) {
+       if (x.match(/[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]+$/)) {
            document.getElementById("email_message").innerHTML = "";  
        }else  {
           document.getElementById("email_message").innerHTML = "The email has invalid character.";
