@@ -133,3 +133,19 @@ function checkDoB(){
        }
    });
 }
+
+//On the fly checking
+function fnamevalidation(){
+   x = document.getElementById("fname").value;
+   if(x.length<2) { 
+       document.getElementById("fname_message").innerHTML = "Invalid name... too short.";  
+       error_flag = 1;
+   }else {
+       if (x.match(/[a-zA-Z3-5'-]+$/)) {
+           document.getElementById("fname_message").innerHTML = "";  
+       }else  {
+          document.getElementById("fname_message").innerHTML = "Invalid characters in name.";
+          error_flag = 1;
+        }
+    }
+   }
