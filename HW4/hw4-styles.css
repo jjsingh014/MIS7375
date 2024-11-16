@@ -1,1 +1,48 @@
+/*
+Name: Jaskarn Singh
+File: style.css
+Date Created: 2024-09-09
+Date Updated: 2024-09-21
+Purpose: Stylesheet for MIS 7375 HW2
+*/
 
+/*
+I added some basic styling for all three html pages. I also changed the font for the h1
+and p tags. I kept the white background but made the table light green with a black ridge
+border. I added 5% paddding to the right for alignment. I also aligned the text right.
+I also changed the background color of the thank you page to a aqua marine color.
+I used a few IDs which I could stylize those specific tags.
+
+*/
+body{
+    background-color: white;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+} 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table,tr,td{
+    border: 1px dashed black;
+}
+#maintable{
+    padding-right: 5%;
+    text-align: right;
+    background-color: lightgreen;
+    border: 1px ridge black;
+}
+#localdate{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    width: 400px;
+    height: 200px;
+}
+#ttable{
+    text-align: left;
+}
+#thankyou{
+    background-color: aquamarine;
+}
