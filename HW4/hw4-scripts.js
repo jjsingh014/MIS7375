@@ -259,7 +259,7 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  x = document.getElementByID("fname").value
+  var x = document.getElementByID("fname").value
   let user = getCookie("username");
   if (user != "") {
     alert("Welcome again " + user);
