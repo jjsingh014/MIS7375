@@ -43,6 +43,9 @@ img{
 #ttable{
     text-align: left;
 }
+#htable{
+    border: none;
+}
 #thankyou{
     background-color: aquamarine;
 }
