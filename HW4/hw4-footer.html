@@ -20,6 +20,12 @@
             <p>Office Phone Number: 123-456-7890</p>
             <p>Clinic Hours: Monday-Friday, 8:00 AM to 6:00 PM USA Central Time</p>
             <p>Clinic Address: 9384 West Main Street, Sanger, TX 76266</p>
+            <p>Your local time: <span id="today"></span>, <span id="localtime"></span></p>
+
+        <script>
+           document.getElementById("today").innerHTML = new Date().toDateString();
+           document.getElementById("localtime").innerHTML = new Date().toLocaleTimeString();
+        </script>
     </body>
     <!--
         I created the contact page which displays basic info of the clinic so patients
