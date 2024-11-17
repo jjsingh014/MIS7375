@@ -30,6 +30,9 @@
     -->
     </head>
     <body>
+        <div class="header" id="myHeader">
+              <h2>HeartCare Medical Clinic - Sanger</h2>
+        </div>
         <h1>
             Patient Registration Form
         </h1>
@@ -599,6 +602,18 @@
         -->
         <script>
            document.getElementById("today").innerHTML = new Date().toLocaleDateString();
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                            header.classList.add("sticky");
+                      } else {
+                        header.classList.remove("sticky");
+                      }
+            }
         </script>
     </body>
     <footer>
