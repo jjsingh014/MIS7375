@@ -259,11 +259,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
+  x = document.getElementByID("fname").value
   let user = getCookie("username");
   if (user != "") {
     alert("Welcome again " + user);
   } else {
-    user = prompt("Please enter your name:", "");
+    user = x;
+    alert("Welcome new user!");
     if (user != "" && user != null) {
       setCookie("username", user, 2);
     }
