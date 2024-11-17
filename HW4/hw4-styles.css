@@ -15,7 +15,7 @@ I used a few IDs which I could stylize those specific tags.
 
 */
 body{
-    background-color: plum;
+    background-color: thistle;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -45,4 +45,7 @@ img{
 }
 #thankyou{
     background-color: aquamarine;
+}
+#whyinfo{
+    background-color: white;
 }
