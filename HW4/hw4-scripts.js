@@ -265,7 +265,7 @@ function checkCookie() {
   } else {
     user = alert("Welcome new user! Please fill the form below.");
     if (user != "" && user != null) {
-      setCookie("username", user, 2);
+      setCookie("fname", user, 2);
     }
   }
 }
