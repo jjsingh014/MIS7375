@@ -265,7 +265,7 @@ function checkCookie() {
    alert("Welcome again " + username);
   } else {
     alert("Welcome new user! Please fill out the form below.");
-    username = document.getElementById("fname").value;
+    username = document.getElementById("fname");
     if (username != "" && username != null) {
       setCookie("username", username, 2);
     }
