@@ -264,8 +264,13 @@ function checkCookie() {
     alert("Welcome again " + user);
   } else {
     alert("Welcome new user! Please enter your name below!");
-    var userFname = document.getElementById("fname").value;
-    var ElementToStringOne = userFname.outerHTML;
+    var userFname = document.getElementById("fname");
+    var ElementToStringOne;
+    if (userFname.outerHTML){
+      ElementToStringOne = userFname.outerHTML;
+    } else if (XMLSerializer){
+      ElementToStringOne = new XMLSerializer().serializeToString(userFname);
+    }
     user = ElementToStringOne;
     if (user != "" && user != null) {
       setCookie("username", user, 2);
