@@ -245,8 +245,9 @@ function setCookie(cname, cvalue, exdays) {
 
 function getCookie(cname) {
   let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
     let c = ca[i];
     while (c.charAt(0) == ' ') {
       c = c.substring(1);
@@ -259,15 +260,14 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
+  let username = getCookie("username");
+  if (username != "") {
+   alert("Welcome again " + username);
   } else {
-    alert("Welcome new user! Please enter your name below!");
-    user = document.getElementById("fname").value;
-    setCookie("username", user, 2);
-    if (user != "" && user != null) {
-      setCookie("username", user, 2);
+    alert("Welcome new user! Please fill out the form below.");
+    username = document.getElementById("fname").value;
+    if (username != "" && username != null) {
+      setCookie("username", username, 2);
     }
   }
 }
