@@ -261,11 +261,12 @@ function getCookie(cname) {
 
 function checkCookie() {
   let username = getCookie("username");
+  var user = document.getElementById("fname").value
   if (username != "") {
    alert("Welcome again " + username);
   } else {
     alert("Welcome new user! Please fill out the form below.");
-    username = document.getElementById("fname").value;
+    username = user.innerHTML;
     console.log(username);
     if (username != "" && username != null) {
       setCookie("username", username, 2);
