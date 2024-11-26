@@ -2,7 +2,7 @@
  Name: Jaskarn Singh
  File: hw2-scripts.js
  Date Created: 2024-10-08
- Date Updated: 2024-11-09
+ Date Updated: 2024-11-26
  Purpose: Redisplay/validate data from a the patient form
 */
 
