@@ -265,13 +265,7 @@ function checkCookie() {
   } else {
     alert("Welcome new user! Please enter your name below!");
     var userFname = document.getElementById("fname");
-    var ElementToStringOne;
-    if (userFname.outerHTML){
-      ElementToStringOne = userFname.outerHTML;
-    } else if (XMLSerializer){
-      ElementToStringOne = new XMLSerializer().serializeToString(userFname);
-    }
-    user = ElementToStringOne;
+    user = userFname.innerHTML;
     if (user != "" && user != null) {
       setCookie("username", user, 2);
     }
