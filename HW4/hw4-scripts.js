@@ -260,15 +260,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let username = getCookie("username");
-  if (username != "") {
-   alert("Welcome again " + username);
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
   } else {
-    alert("Welcome new user! Please fill out the form below.");
-    username = fnamevalidation("fname");
-    console.log(username);
-    if (username != "" && username != null) {
-      setCookie("username", username, 2);
-    }
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
   }
 }
