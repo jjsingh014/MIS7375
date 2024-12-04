@@ -262,7 +262,7 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+    confirm("Welcome again " + user + "! Not " + user + "? Press Clear");
   } else {
      user = prompt("Please enter your name:","");
      if (user != "" && user != null) {
